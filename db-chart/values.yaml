@@ -1,0 +1,20 @@
+service:
+  name: student-mysql
+  port: 3306
+
+image:
+  repository: mysql
+  tag: "8.4"
+  pullPolicy: IfNotPresent
+
+auth:
+  rootPassword: rootpass
+  database: studentdb
+  username: appuser
+  password: apppass
+
+persistence:
+  size: 1Gi
+  storageClassName: ""   
+
+resources: {}
