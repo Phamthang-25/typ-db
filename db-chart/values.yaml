@@ -15,6 +15,6 @@ auth:
 
 persistence:
   size: 1Gi
-  storageClassName: ""   
+  storageClassName: "local-path"   
 
 resources: {}
